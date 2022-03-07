@@ -366,6 +366,57 @@ if($query->num_rows() > 0){
 								</div>
 							</div>
 						</div>
+						<div class="col-12">
+							<div class="card">
+								<div class="card-header">
+									<h3 class="card-title">Send Button : <span style="color: red"><?=base_url().''?>api/makeurl</span></h3>
+								</div>
+								<div class="card-body">
+									<table id="example2" class="table table-bordered table-striped">
+										<thead>
+											<tr>
+												<th>ParameterName</th>
+												<th>Description</th>
+												<th>ParameterValue</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>apikey</td>
+												<td>apiKey is in the table above</td>
+												<td><?=$usercode?></td>
+											</tr>
+											<tr>
+												<td>mobile</td>
+												<td>Your delivery destination begins with the country code</td>
+												<td>919841xxxxx</td>
+											</tr>
+											<tr>
+												<td>msg</td>
+												<td>Message containt</td>
+												<td>This is Test message</td>
+											</tr>
+											<tr>
+												<td>buttons</td>
+												<td>Buttons Name</td>
+												<td>example1,example2</td>
+											</tr>
+											<tr>
+												<td>reply</td>
+												<td>Reply of Buttons Name</td>
+												<td>example1,example2</td>
+											</tr>
+										</tbody>
+										<tfoot>
+											<tr>
+												<th colspan="3">Example : <span><?=base_url().''?>api/buttons?<span style="color: red; background: yellow">apikey</span>=<?=$usercode?>&<span style="color: red; background: yellow">mobile</span>=9198410xxxxx&<span style="color: red; background: yellow">msg</span>=hallo&</span><span style="color: red; background: yellow">buttons</span>=example1,example2</span>
+												<span style="color: red; background: yellow">reply</span>=example1,example2</span></th>
+											</tr>
+										</tfoot>
+									</table>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
