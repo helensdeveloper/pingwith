@@ -16,6 +16,7 @@ $route = array(
     'users/enablemulti/(:any)' => 'users/enablemulti/$1',
     'users/disablemulti/(:any)' => 'users/disablemulti/$1',
     'api/send' => 'send',
+    'api/buttons' => 'buttons',
     'api/devices' => 'devicestatus',
     'api/makeurl' => 'makeurl',
     '404_override'         	=> '',
